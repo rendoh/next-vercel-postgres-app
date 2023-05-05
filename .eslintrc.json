@@ -1,3 +1,14 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next",
+    "next/core-web-vitals"
+  ],
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
+  "ignorePatterns": ["next.config.js"],
+  "rules": {
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn"
+  }
 }
